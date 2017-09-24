@@ -1,7 +1,7 @@
 environment:
   matrix:
     - RUBY_VERSION: 22
-    - RUBY_VERSION: 21
+    # - RUBY_VERSION: 21
 
 # Install scripts. (runs after repo cloning)
 install:
@@ -12,7 +12,10 @@ install:
 before_test:
   - ruby -v
   - gem -v
+  - gem env
   - bundle -v
+  - bundle show rack
+
 
 # Post-install test scripts.
 test_script:
