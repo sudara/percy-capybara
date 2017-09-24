@@ -16,6 +16,9 @@ before_test:
   - bundle -v
   - bundle show rack
 
+cache:
+  - C:\Ruby22\lib\ruby\gems\2.2.0
+  - C:\Ruby22\bin
 
 # Post-install test scripts.
 test_script:
